@@ -3,6 +3,8 @@ import ReactHover, { Trigger, Hover } from 'react-hover'
 import TriggerComponent from './component/TriggerComponent'
 import HoverComponent from './component/HoverComponent'
 
+const port = process.env.PORT || 3000;
+
 const OptionsCursorTrueWithMargins = {
    followCursor: true,
    shiftX: 20,
@@ -22,5 +24,7 @@ const App = () => {
        </ReactHover>
   )
 };
+
+App.listen(port);
 
 export default App
